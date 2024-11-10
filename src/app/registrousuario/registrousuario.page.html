@@ -1,0 +1,65 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Biblioteca Digital</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Registro de Usuario</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="inputContainer special-border">
+    <label for="id_usuario" class="label">Ingrese su RUT / DNI</label>
+    <input type="text" name="id_usuario" id="id_usuario" class="input" autocomplete="username" required>  
+  </div>
+
+  <div class="inputContainer">
+    <label for="nombre_usuario" class="label">Ingrese sus Nombres</label>
+    <input type="text" name="nombre_usuario" id="nombre_usuario" class="input" autocomplete="username" required>  
+  </div>
+
+  <div class="inputContainer">
+    <label for="apellido_usuario" class="label">Ingrese sus Apellidos</label>
+    <input type="text" name="apellido_usuario" id="apellido_usuario" class="input" autocomplete="username" required>  
+  </div>
+
+  <div class="inputContainer">
+    <label for="email_usuario" class="label">Email Usuario</label>
+    <input type="text" name="email_usuario" id="email_usuario" class="input" autocomplete="username" required>  
+  </div>
+
+  <div class="inputContainer">
+    <label for="fono_usuario" class="label">Teléfono Usuario</label>
+    <input type="text" name="fono_usuario" id="fono_usuario" class="input" autocomplete="username" required>  
+  </div>
+
+  <div class="inputContainer">
+    <label for="pass_usuario" class="label">Ingrese una contraseña</label>  
+    <input type="password" name="pass_usuario" id="pass_usuario" class="input" autocomplete="current-password" required>
+  </div>
+
+  <div class="inputContainer">
+    <label for="repass_usuario" class="label">Reingrese su Contraseña</label>  
+    <input type="password" name="repass_usuario" id="repass_usuario" class="input" autocomplete="current-password" required>
+  </div>
+
+
+  <div class="inputContainer">
+    <label for="seleccionpreferencia" class="label">Seleccione sus Preferencias</label>
+    <select name="seleccionpreferencia" id="seleccionpreferencia" class="input" multiple>
+      <option value="Ciencia Ficcion">Ciencia Ficción</option>
+      <option value="Drama">Drama</option>
+      <option value="Auto Ayuda">Auto Ayuda</option>
+      <option value="Novelas">Novelas</option>
+      <option value="Otros">Otros</option>
+    </select>
+  </div>
+
+  <div id="container">
+    <button class="submitBtn" (click) = "ir_registroexitoso()">Registrar Usuario</button>
+    <button class="submitBtn" (click) = "ir_inicio()">Volver Inicio</button>
+  </div>
+</ion-content>

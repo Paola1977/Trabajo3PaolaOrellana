@@ -1,0 +1,27 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Biblioteca Digital</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Biblioteca Digital</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="imageContainer">
+    <h1>Biblioteca Digital</h1>
+  </div>
+
+  <div class="imageContainer">
+    <ion-img src="assets/imgs/logo.png" alt="Logo de Biblioteca Digital"></ion-img>
+  </div>
+
+  <!-- Contenedor de los botones al final de la página -->
+  <div id="container">
+    <button class="submitBtn" (click)="ir_login()">Ingreso</button>
+    <button class="submitBtn" (click) = "ir_registro()">Nuevo Usuario</button>
+  </div>
+</ion-content>

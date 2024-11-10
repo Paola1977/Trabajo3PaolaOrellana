@@ -1,0 +1,41 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Biblioteca Digital</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Bibliteca Usuario</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="imageContainer">
+    <h1>Libros Disponibles para Lectura</h1>
+  </div>
+
+  <div class="imageContainer">
+    <h1>NOMBRE USUARIO</h1>
+  </div>
+
+  <div class="inputContainer">
+    <label for="seleccionlectura" class="label">Seleccione Libro a Leer</label>
+    <select name="seleccionlectura" id="seleccionlectura" class="input">
+      <option value="ID01">Libro 1</option>
+      <option value="ID02">Libro 2</option>
+      <option value="ID03">Libro 3</option>
+      <option value="ID04">Libro 4</option>
+      <option value="ID05">Libro 5</option>
+    </select>
+  </div>
+
+  <div class="imageContainer">
+    <ion-img src="assets/imgs/logo.png" alt="Logo de Biblioteca Digital"></ion-img>
+  </div>
+
+  <div id="container">
+    <button class="submitBtn" (click) = "ir_lectura()">Visualizar Libro</button>
+    <button class="submitBtn" (click) = "ir_inicio()">Volver Inicio</button>
+  </div>
+</ion-content>

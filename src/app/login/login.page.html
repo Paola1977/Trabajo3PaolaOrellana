@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Biblioteca Digital</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Ingreso Usuario</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div class="imageContainer">
+    <h1>Biblioteca Digital</h1>
+  </div>
+
+  <div class="inputContainer">         
+    <label for="id_usuario" class="label">Ingrese su Usuario</label>
+    <input type="text" name="id_usuario" id="id_usuario" class="input" autocomplete="username" required>
+  </div>
+
+  <div class="inputContainer">
+    <label for="pass_usuario" class="label">Ingrese su Password</label>
+    <input type="password" name="pass_usuario" id="pass_usuario" class="input" autocomplete="current-password" required>      
+  </div>
+
+  <div class="imageContainer">
+    <ion-img src="assets/imgs/logo.png" alt="Logo de Biblioteca Digital"></ion-img>
+  </div>
+
+  <div id="container">
+    <button class="submitBtn" (click)="ir_lectura()">Ingresar</button>
+    <button class="submitBtn">Olvido su Contraseña</button>
+    <button class="submitBtn" (click)="ir_registro()">Registrar Usuario Nuevo</button>
+  </div>
+</ion-content>
+

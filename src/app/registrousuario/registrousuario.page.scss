@@ -1,0 +1,108 @@
+ion-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: #f3f4f6;
+  height: 100vh;
+}
+
+.imageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.imageContainer ion-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.inputprimero {
+  margin-top: 20px;
+}
+
+/* Agrega un borde especial para el primer input */
+.special-border {
+
+  padding: 15px;
+  border-radius: 10px;
+
+}
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #4a4a4a;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  max-width: 70%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  background-color: #fff;
+  outline: none;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.input:focus {
+  border-color: purple;
+  box-shadow: 0 0 5px rgba(128, 0, 128, 0.3);
+}
+
+/* Estilos adicionales para el listbox con selección múltiple */
+select.input {
+  text-align-last: center;
+  height: auto; /* Permite que el listbox se ajuste a más opciones seleccionadas */
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  width: 100%;
+  margin-bottom: 20px; /* Borde inferior para el botón */
+}
+
+.submitBtn {
+  display: inline-block;
+  width: 70%;
+  padding: 15px;
+  margin: 5px 0;
+  background-color: purple;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  transition: background-color 0.3s ease;
+}
+
+.submitBtn:hover {
+  background-color: #5a0a5a;
+}
