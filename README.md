@@ -1,5 +1,3 @@
-El aplicativo no es necesito instalar ningún componente.
+El aplicativo se debe ejecutar con el APK que esta disponible en la carpeta "APK Biblioteca Digital".
 
-Debe ejecutarse sobre Visual Studio Code.
-
-Cuando se ejecute, en las opciones de programador, lo ideal sería dejar las dimensiones del Samsung Galaxy S8+
+No requiere ningún componente extra que deba instalarse, dado que es una maqueta
